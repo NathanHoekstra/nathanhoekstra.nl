@@ -2,6 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+import Hr from "@components/Hr.astro";
 import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
 import type { CollectionEntry } from "astro:content";
@@ -82,7 +83,7 @@ const layoutProps = {
     </ul>
 
     <div
-      class="flex flex-col-reverse items-center justify-between gap-6 sm:flex-row-reverse sm:items-end sm:gap-4"
+      class="flex flex-col-reverse items-center justify-between gap-6 mb-2 sm:flex-row-reverse sm:items-end sm:gap-4"
     >
       <button
         id="back-to-top"
@@ -98,6 +99,16 @@ const layoutProps = {
 
       <ShareLinks />
     </div>
+    <Hr noPadding />
+    <script
+      src="https://utteranc.es/client.js"
+      repo="NathanHoekstra/nathanhoekstra.nl"
+      issue-term="title"
+      label="comment"
+      theme="preferred-color-scheme"
+      crossorigin="anonymous"
+      async
+    ></script>
   </main>
   <Footer />
 </Layout>
