@@ -46,6 +46,21 @@ function reflectPreference() {
   }
 }
 
+function toggleUtterancesTheme() {
+  if (document.querySelector(".utterances-frame")) {
+    const theme =
+      localStorage.getItem("theme") === "light"
+        ? "github-light"
+        : "github-dark";
+    const message = {
+      type: "set-theme",
+      theme,
+    };
+    const iframe = document.querySelector(".utterances-frame");
+    iframe?.contentWindow?.postMessage(message, "https://utteranc.es");
+  }
+}
+
 // set early so no page flashes / CSS is made aware
 reflectPreference();
 
@@ -58,6 +73,7 @@ window.onload = () => {
     document.querySelector("#theme-btn")?.addEventListener("click", () => {
       themeValue = themeValue === "light" ? "dark" : "light";
       setPreference();
+      toggleUtterancesTheme();
     });
   }
 
@@ -73,4 +89,5 @@ window
   .addEventListener("change", ({ matches: isDark }) => {
     themeValue = isDark ? "dark" : "light";
     setPreference();
+    toggleUtterancesTheme();
   });
