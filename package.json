@@ -1,6 +1,6 @@
 {
   "name": "NathanHoekstra.nl",
-  "version": "4.2.0",
+  "version": "4.3.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -23,31 +23,31 @@
     "github-slugger": "^2.0.0",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
-    "satori": "^0.10.11",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.4.5"
+    "satori": "^0.10.13",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.3"
   },
   "devDependencies": {
     "@astrojs/react": "^3.6.0",
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
-    "@divriots/jampack": "^0.23.2",
-    "@tailwindcss/typography": "^0.5.10",
+    "@divriots/jampack": "^0.24.4",
+    "@tailwindcss/typography": "^0.5.13",
     "@types/github-slugger": "^1.3.0",
-    "@types/react": "^18.2.79",
-    "@typescript-eslint/parser": "^6.19.0",
-    "astro-eslint-parser": "^0.16.2",
+    "@types/react": "^18.3.3",
+    "@typescript-eslint/parser": "^7.15.0",
+    "astro-eslint-parser": "^1.0.2",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.56.0",
-    "eslint-plugin-astro": "^0.31.3",
+    "eslint-plugin-astro": "^1.2.2",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.0",
-    "prettier": "^3.2.4",
-    "prettier-plugin-astro": "^0.13.0",
-    "prettier-plugin-tailwindcss": "^0.5.14",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.2",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "config": {
     "commitizen": {
