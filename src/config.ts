@@ -3,12 +3,20 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://nathanhoekstra.nl",
   author: "Nathan Hoekstra",
+  profile: "https://nathanhoekstra.nl",
   desc: "Nathan Hoekstra's portfolio and blog",
   title: "Nathan Hoekstra",
   ogImage: "nathanhoekstra-og.jpg",
   lightAndDarkMode: true,
+  postPerIndex: 4,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
+  showArchives: true,
+  editPost: {
+    url: "https://github.com/NathanHoekstra/nathanhoekstra.nl/edit/main/src/content/blog",
+    text: "Suggest Changes",
+    appendFilePath: true,
+  },
 };
 
 export const UTTERANCES = {

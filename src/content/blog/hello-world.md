@@ -1,10 +1,9 @@
 ---
-title: Hello World!
 author: Nathan Hoekstra
 pubDatetime: 2024-04-11T18:20:04Z
+title: Hello World!
 slug: hello-world
 featured: true
-draft: false
 description: Celebrating the launch of my website and discussing how it came to be.
 ---
 
