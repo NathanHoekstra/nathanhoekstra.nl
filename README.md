@@ -38,7 +38,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## 📜 License
 
-Licensed under the MIT License, Copyright © 2023
+Licensed under the MIT License, Copyright © 2025
 
 ---
 
