@@ -1,13 +1,11 @@
 ---
-import Hr from "@components/Hr.astro";
 ---
 
 <div id="utterances-container" class="mt-2">
-  <Hr noPadding />
 </div>
 
 <script>
-  import { UTTERANCES } from "@config";
+  import { UTTERANCES } from "@/config";
 
   const script = document.createElement("script");
   const container = document.querySelector("#utterances-container");
