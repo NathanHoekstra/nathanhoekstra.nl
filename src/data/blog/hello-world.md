@@ -1,6 +1,7 @@
 ---
 author: Nathan Hoekstra
 pubDatetime: 2024-04-11T18:20:04Z
+modDatetime: 2025-03-20T15:56:19Z
 title: Hello World!
 slug: hello-world
 featured: true
@@ -10,9 +11,9 @@ tags:
 description: Celebrating the launch of my website and discussing how it came to be.
 ---
 
-Hello! welcome to my website! I finally reached a point where I was satisfied with the look of the website.
+Hello, welcome to my website! I finally reached a point where I was satisfied with the look of the website.
 
-Way too much time has passed since I bought the domain since I was unable to find a template that suits me (and I was not going to make one since I am not a good web developer by any means).
+It's been way too long since I bought the domain because I couldn't find a template that worked for me, and I wasn't about to create one myself since I'm not a skilled web developer by any means.
 
 I wanted to use a site/template that atleast had the following requirements:
 
