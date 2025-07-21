@@ -13,7 +13,7 @@ export const SITE = {
   showBackButton: true, // show back button in post detail
   editPost: {
     enabled: true,
-    text: "Suggest Changes",
+    text: "Edit page",
     url: "https://github.com/NathanHoekstra/nathanhoekstra.nl/edit/main/src/content/blog",
   },
   dynamicOgImage: true,

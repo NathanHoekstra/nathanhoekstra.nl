@@ -5,7 +5,7 @@ title: "About"
 
 Welcome, thanks for visiting my website!
 
-My name is Nathan Hoekstra. I am currently employed as a Embedded Software Engineer at AimValley. I am running this website in my free time and I hope to create articles that are both useful and intresting. If you would like to connect, please use the social media links in the bottom.
+My name is Nathan Hoekstra. I am currently employed as a Software Engineer at the Dutch Ministry of Defence. I am running this website in my free time and I hope to create articles that are both useful and intresting. If you would like to connect, please use the social media links in the bottom.
 
 **I will add my resume here in the future!**
 
