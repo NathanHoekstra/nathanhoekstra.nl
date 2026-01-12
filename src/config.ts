@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/NathanHoekstra/nathanhoekstra.nl/edit/main/src/content/blog",
+    url: "https://github.com/NathanHoekstra/nathanhoekstra.nl/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
