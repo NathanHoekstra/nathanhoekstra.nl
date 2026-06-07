@@ -61,6 +61,20 @@ interface FeaturesConfig {
   search?: "pagefind" | false;
 }
 
+interface GiscusConfig {
+  repo: string;
+  repoId: string;
+  category: string;
+  categoryId: string;
+  mapping?: 'pathname' | 'url' | 'title' | 'og:title' | 'specific' | 'number';
+  strict?: '0' | '1';
+  reactionsEnabled?: '0' | '1';
+  emitMetadata?: '0' | '1';
+  inputPosition?: 'top' | 'bottom';
+  lang?: string;
+  loading?: 'lazy' | 'eager';
+}
+
 interface SocialLink {
   /**
    * Must match an SVG filename in src/assets/icons/socials/.
@@ -94,6 +108,7 @@ interface ShareLink {
 
 interface AstroPaperConfig {
   site: SiteConfig;
+  giscus: GiscusConfig;
   posts?: PostsConfig;
   features?: FeaturesConfig;
   /** Social profile links shown in header/footer */
@@ -119,6 +134,7 @@ type ResolvedSiteConfig = Required<
 
 export interface ResolvedAstroPaperConfig {
   site: ResolvedSiteConfig;
+  giscus: Required<GiscusConfig>;
   posts: Required<PostsConfig>;
   features: Required<FeaturesConfig>;
   socials: SocialLink[];

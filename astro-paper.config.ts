@@ -12,6 +12,13 @@ export default defineAstroPaperConfig({
     timezone: "Europe/Amsterdam",
     dir: "ltr",
   },
+  giscus: {
+    repo: "NathanHoekstra/nathanhoekstra.nl",
+    repoId: "R_kgDOLs7eDw",
+    category: "Announcements",
+    categoryId: "DIC_kwDOLs7eD84C-o1a",
+    reactionsEnabled: "0",
+  },
   posts: {
     perPage: 4,
     perIndex: 4,

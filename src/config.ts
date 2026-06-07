@@ -20,6 +20,19 @@ const config: ResolvedAstroPaperConfig = {
     googleVerification:
       userConfig.site.googleVerification || PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
+  giscus: {
+    repo: userConfig.giscus.repo,
+    repoId: userConfig.giscus.repoId,
+    category: userConfig.giscus.category,
+    categoryId: userConfig.giscus.categoryId,
+    mapping: userConfig.giscus.mapping ?? "pathname",
+    strict: userConfig.giscus.strict ?? "0",
+    reactionsEnabled: userConfig.giscus.reactionsEnabled ?? "1",
+    emitMetadata: userConfig.giscus.emitMetadata ?? "0",
+    inputPosition: userConfig.giscus.inputPosition ?? "bottom",
+    lang: userConfig.giscus.lang ?? "en",
+    loading: userConfig.giscus.loading ?? "lazy",
+  },
   posts: {
     perPage: userConfig.posts?.perPage ?? 4,
     perIndex: userConfig.posts?.perIndex ?? 4,

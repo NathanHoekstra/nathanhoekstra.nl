@@ -1,7 +1,7 @@
 ---
 author: Nathan Hoekstra
 pubDatetime: 2024-04-11T18:20:04Z
-modDatetime: 2025-03-20T15:56:19Z
+modDatetime: 2026-06-07T17:59:19Z
 title: Hello World!
 slug: hello-world
 featured: true
@@ -26,7 +26,7 @@ I wanted to use a site/template that atleast had the following requirements:
 
 I came across the [AstroPaper](https://github.com/satnaing/astro-paper) template which is using using [Astro](https://astro.build/) and it checked all the boxes.
 
-I currently customized the blog posts with a comment system using GitHub issues ([utterances](https://utteranc.es/)). More customization will be done when I have the time and motivation to do so.
+I currently customized the blog posts with a comment system using GitHub Discussions ([giscus](https://giscus.app)). More customization will be done when I have the time and motivation to do so.
 
 The source code for this site is available on [GitHub](https://github.com/NathanHoekstra/nathanhoekstra.nl)!
 
