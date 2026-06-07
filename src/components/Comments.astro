@@ -1,67 +1,40 @@
 ---
 import config from "@/config";
 ---
-<div
-  id="giscus-container"
-  class="mt-8"
-  data-repo={config.giscus.repo}
-  data-repo-id={config.giscus.repoId}
-  data-category={config.giscus.category}
-  data-category-id={config.giscus.categoryId}
-  data-mapping={config.giscus.mapping}
-  data-strict={config.giscus.strict}
-  data-reactions-enabled={config.giscus.reactionsEnabled}
-  data-emit-metadata={config.giscus.emitMetadata}
-  data-input-position={config.giscus.inputPosition}
-  data-lang={config.giscus.lang}
-  data-loading={config.giscus.loading}
-></div>
+
+<div class="mt-8">
+  <script
+    is:inline
+    src="https://giscus.app/client.js"
+    data-repo={config.giscus.repo}
+    data-repo-id={config.giscus.repoId}
+    data-category={config.giscus.category}
+    data-category-id={config.giscus.categoryId}
+    data-mapping={config.giscus.mapping}
+    data-strict={config.giscus.strict}
+    data-reactions-enabled={config.giscus.reactionsEnabled}
+    data-emit-metadata={config.giscus.emitMetadata}
+    data-input-position={config.giscus.inputPosition}
+    data-theme="preferred_color_scheme"
+    data-lang={config.giscus.lang}
+    data-loading={config.giscus.loading}
+    crossorigin="anonymous"
+    async
+  ></script>
+</div>
 
 <script is:inline>
-  function loadGiscus() {
-    const container = document.getElementById('giscus-container');
-    if (!container) return;
-
-    // Remove any existing giscus iframe to force a fresh load
-    container.querySelector('.giscus')?.remove();
-
-    const d = container.dataset;
-    const script = document.createElement('script');
-    script.src = 'https://giscus.app/client.js';
-    script.setAttribute('data-repo', d.repo);
-    script.setAttribute('data-repo-id', d.repoId);
-    script.setAttribute('data-category', d.category);
-    script.setAttribute('data-category-id', d.categoryId);
-    script.setAttribute('data-mapping', d.mapping);
-    script.setAttribute('data-strict', d.strict);
-    script.setAttribute('data-reactions-enabled', d.reactionsEnabled);
-    script.setAttribute('data-emit-metadata', d.emitMetadata);
-    script.setAttribute('data-input-position', d.inputPosition);
-    script.setAttribute('data-theme', localStorage.getItem('theme') === 'dark' ? 'dark' : 'light');
-    script.setAttribute('data-lang', d.lang);
-    script.setAttribute('data-loading', d.loading);
-    script.crossOrigin = 'anonymous';
-    script.async = true;
-
-    container.appendChild(script);
-  }
-
   function updateGiscusTheme() {
-    const theme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
-    const iframe = document.querySelector('iframe.giscus-frame');
-    if (iframe) {
-      iframe.contentWindow.postMessage(
-        { giscus: { setConfig: { theme } } },
-        'https://giscus.app'
-      );
-    }
+    const theme = document.documentElement.classList.contains("dark") ? "dark" : "light"
+    const iframe = document.querySelector("iframe.giscus-frame")
+    if (!iframe) return
+    iframe.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, "https://giscus.app")
   }
 
-  document.addEventListener('astro:page-load', loadGiscus);
+  const observer = new MutationObserver(updateGiscusTheme)
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] })
 
-  const observer = new MutationObserver(updateGiscusTheme);
-  observer.observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ['class', 'data-theme'],
-  });
+  window.onload = () => {
+    updateGiscusTheme()
+  }
 </script>

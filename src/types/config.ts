@@ -61,18 +61,21 @@ interface FeaturesConfig {
   search?: "pagefind" | false;
 }
 
+type repoFormat = `${string}/${string}`;
+type stringBoolean = "0" | "1";
+
 interface GiscusConfig {
-  repo: string;
+  repo: repoFormat;
   repoId: string;
   category: string;
   categoryId: string;
-  mapping?: 'pathname' | 'url' | 'title' | 'og:title' | 'specific' | 'number';
-  strict?: '0' | '1';
-  reactionsEnabled?: '0' | '1';
-  emitMetadata?: '0' | '1';
-  inputPosition?: 'top' | 'bottom';
+  mapping?: "pathname" | "url" | "title" | "og:title" | "specific" | "number";
+  strict?: stringBoolean;
+  reactionsEnabled?: stringBoolean;
+  emitMetadata?: stringBoolean;
+  inputPosition?: "top" | "bottom";
   lang?: string;
-  loading?: 'lazy' | 'eager';
+  loading?: "lazy" | "eager";
 }
 
 interface SocialLink {
