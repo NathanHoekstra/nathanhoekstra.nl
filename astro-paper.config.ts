@@ -7,7 +7,7 @@ export default defineAstroPaperConfig({
     description: "Nathan Hoekstra's portfolio and blog",
     author: "Nathan Hoekstra",
     profile: "https://nathanhoekstra.nl",
-    ogImage: "nathanhoekstra-og.jpg",
+    ogImage: "default-og.jpg",
     lang: "en",
     timezone: "Europe/Amsterdam",
     dir: "ltr",
@@ -22,7 +22,6 @@ export default defineAstroPaperConfig({
   posts: {
     perPage: 4,
     perIndex: 4,
-    scheduledPostMargin: 15 * 60 * 1000,
   },
   features: {
     lightAndDarkMode: true,
@@ -34,6 +33,7 @@ export default defineAstroPaperConfig({
       url: "https://github.com/NathanHoekstra/nathanhoekstra.nl/edit/main/",
     },
     search: "pagefind",
+    toc: true,
   },
   socials: [
     { name: "github",   url: "https://github.com/NathanHoekstra" },

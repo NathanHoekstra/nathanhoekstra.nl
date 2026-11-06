@@ -36,8 +36,8 @@ const config: ResolvedAstroPaperConfig = {
   posts: {
     perPage: userConfig.posts?.perPage ?? 4,
     perIndex: userConfig.posts?.perIndex ?? 4,
-    scheduledPostMargin:
-      userConfig.posts?.scheduledPostMargin ?? 15 * 60 * 1000,
+    // Deprecated and unused. Not read from userConfig, so builds don't warn about it.
+    scheduledPostMargin: 15 * 60 * 1000,
   },
   features: {
     lightAndDarkMode: userConfig.features?.lightAndDarkMode ?? true,
@@ -46,6 +46,7 @@ const config: ResolvedAstroPaperConfig = {
     showBackButton: userConfig.features?.showBackButton ?? true,
     editPost: userConfig.features?.editPost ?? { enabled: false },
     search: userConfig.features?.search ?? "pagefind",
+    toc: userConfig.features?.toc ?? true,
   },
   socials: userConfig.socials ?? [],
   shareLinks: userConfig.shareLinks ?? [],

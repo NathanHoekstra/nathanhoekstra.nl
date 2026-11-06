@@ -1,7 +1,7 @@
 ---
 author: Nathan Hoekstra
 pubDatetime: 2024-04-11T18:20:04Z
-modDatetime: 2026-06-07T17:59:19Z
+modDatetime: 2026-11-06T11:42:19Z
 title: Hello World!
 slug: hello-world
 featured: true
@@ -32,6 +32,6 @@ The source code for this site is available on [GitHub](https://github.com/Nathan
 
 ## So, what's next?
 
-Most of the content on here will be related to software, 3d-printing and hardware development. If I have the time, I hope to write posts on a monthly basis.
+Most of the content on here will be related to software, 3d-printing and hardware development. If I have the time, I hope to write some posts.
 
 Make sure to follow me on [LinkedIn](https://www.linkedin.com/in/nathanhoekstra/) since I'll be sure to announce new posts on my timeline. Additionally, you can add my [RSS](https://nathanhoekstra.nl/rss.xml) feed to your favorite reader app. Thanks for stopping by!

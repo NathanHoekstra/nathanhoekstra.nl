@@ -31,12 +31,12 @@ const homePath = getRelativeLocaleUrl(locale, "");
     id="main-content"
     data-layout="index"
     data-home-path={homePath}
-    class="app-layout"
+    class="app-layout my-1"
   >
     <section id="hero" class="border-border border-b pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
         Nathan Hoekstra
-      </h1>
+      </h1>{" "}
       <a
         target="_blank"
         href={`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}rss.xml`}
@@ -57,13 +57,14 @@ const homePath = getRelativeLocaleUrl(locale, "");
         testing software that is targeted for embedded systems.
       </p>
       <p class="mt-2">
-        Read the blog posts or check the
+        Read the blog posts or check the{" "}
         <LinkButton
           class="hover:text-accent underline decoration-dashed underline-offset-4"
           href="https://www.nathanhoekstra.nl/about/"
         >
           about
-        </LinkButton> page for more info about me.
+        </LinkButton>{" "}
+        page for more info about me.
       </p>
       {
         socials.length > 0 && (

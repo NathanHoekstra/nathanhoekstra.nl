@@ -4,7 +4,6 @@ import config from "@/config";
 
 <div class="mt-8">
   <script
-    is:inline
     src="https://giscus.app/client.js"
     data-repo={config.giscus.repo}
     data-repo-id={config.giscus.repoId}
@@ -18,6 +17,7 @@ import config from "@/config";
     data-theme="preferred_color_scheme"
     data-lang={config.giscus.lang}
     data-loading={config.giscus.loading}
+    data-astro-rerun
     crossorigin="anonymous"
     async
   ></script>
